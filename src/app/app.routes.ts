@@ -8,6 +8,7 @@ export const routes: Routes = [
   { path: 'home',             component: HomeComponent },
   { path: 'about',            component: AboutComponent },
   { path: 'learning/courses', component: CourseManagementComponent},
+  { path: 'hola',             redirectTo: 'home', pathMatch: 'full' },
   { path: '',                 redirectTo: 'home', pathMatch: 'full' },
   { path: '**',               component: PageNotFoundComponent }
 ];
